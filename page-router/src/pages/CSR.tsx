@@ -1,6 +1,7 @@
 import { User } from "@/type/User";
 import { useEffect, useState } from "react";
 
+// https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering
 export default function CSR() {
   const [users, setUsers] = useState<User[]>([]);
 

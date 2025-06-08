@@ -5,6 +5,7 @@ interface Props {
   users: User[];
 }
 
+// https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const users = await fetch(
     "https://68455700fc51878754db1dfa.mockapi.io/api/v1/users"
